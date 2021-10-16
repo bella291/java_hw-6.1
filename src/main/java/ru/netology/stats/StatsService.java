@@ -42,7 +42,7 @@ public class StatsService {
     }
 
     public int lowerThanAverageSaleMonths(int[] sales) {   // средняя сумма продаж за месяц
-        int averageSaleMonth = 15;
+        int averageSaleMonth = averageSum(sales);
         int month = 0;
         for (int sale : sales) {
             if (sale < averageSaleMonth)
@@ -52,7 +52,7 @@ public class StatsService {
     }
 
     public int higherThanAverageSaleMonths(int[] sales) {   // средняя сумма продаж за месяц
-        int averageSaleMonth = 15;
+        int averageSaleMonth = averageSum(sales);
         int month = 0;
         for (int sale : sales) {
             if (sale > averageSaleMonth)
